@@ -13,15 +13,10 @@
 
                         <ion-grid class="main_grid">
                             <ion-row>
+                                <ion-col>
+                                    <div>
 
-                                <ion-col size="2">
-                                    <div>
-                                        <ion-icon class="login_icon" slot="start" name="person"></ion-icon>
-                                    </div>
-                                </ion-col>
-                                <ion-col size="10">
-                                    <div>
-                                        <ion-input  class="login_input" type="text" name="username"
+                                        <ion-input class="login_input" type="text" name="username"
                                                    placeholder="Mobile no. or e-mail"
                                                    required></ion-input>
                                     </div>
@@ -29,14 +24,10 @@
                             </ion-row>
 
                             <ion-row>
-                                <ion-col size="2">
+                                <ion-col>
                                     <div>
-                                        <ion-icon class="login_icon" slot="start" name="key"></ion-icon>
-                                    </div>
-                                </ion-col>
-                                <ion-col size="10">
-                                    <div>
-                                        <ion-input class="login_input" type="password" name="password" placeholder="Password"
+                                        <ion-input class="login_input" type="password" name="password"
+                                                   placeholder="Password"
                                                    required></ion-input>
                                     </div>
                                 </ion-col>
@@ -50,7 +41,7 @@
                 </div>
                 <hr class="hr_line">
                 <div>
-                    <h6 class="fgt_pwd" (click)="forgetpwdlink()" routerDirection="forward" >Forget Password..?</h6>
+                    <h6 class="fgt_pwd" (click)="forgetpwdlink()" routerDirection="forward">Forget Password..?</h6>
                 </div>
 
 
@@ -70,7 +61,7 @@
                                 <img width="40px;" src="/assets/icon/facebook.svg">
                             </div>
                         </ion-col>
-                        <ion-col ></ion-col>
+                        <ion-col></ion-col>
                         <ion-col>
                             <div>
                                 <img width="40px;" src="/assets/icon/insta.svg">

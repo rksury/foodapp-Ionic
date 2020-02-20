@@ -37,19 +37,19 @@
 }
 
 .login_icon {
-  width: 35px;
-  height: 35px;
+  width: 20px;
+  height: 20px;
   color: #3dd77a;
 }
 
 .login_input {
   border: 1px solid #a0a0a0;
-  color: black;
+  color: white;
   border-radius: 50px;
-  background-color: #e4e3ea;
+  //background-color: #e4e3ea;
 }
 
-.hr_line{
+.hr_line {
   width: 80%;
   border: 1px solid #a0a0a0;
 }
@@ -70,13 +70,13 @@
 .green_btn {
   justify-content: center;
   align-items: center;
-  width: 300px;
+  width: 200px;
 }
 
 .blue_btn {
   justify-content: center;
   align-items: center;
-  width: 200px;
+  width: 300px;
 }
 
 .social_icon {
