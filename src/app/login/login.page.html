@@ -1,0 +1,91 @@
+<ion-app>
+    <ion-content>
+
+        <div id="bg_color">
+            <div class="bg_overlay ">
+
+                <ion-grid class="logo">
+                    <img class="logo1" src="/assets/icon/foodlogo.png">
+                </ion-grid>
+
+                <div>
+                    <form>
+
+                        <ion-grid class="main_grid">
+                            <ion-row>
+
+                                <ion-col size="2">
+                                    <div>
+                                        <ion-icon class="login_icon" slot="start" name="person"></ion-icon>
+                                    </div>
+                                </ion-col>
+                                <ion-col size="10">
+                                    <div>
+                                        <ion-input  class="login_input" type="text" name="username"
+                                                   placeholder="Mobile no. or e-mail"
+                                                   required></ion-input>
+                                    </div>
+                                </ion-col>
+                            </ion-row>
+
+                            <ion-row>
+                                <ion-col size="2">
+                                    <div>
+                                        <ion-icon class="login_icon" slot="start" name="key"></ion-icon>
+                                    </div>
+                                </ion-col>
+                                <ion-col size="10">
+                                    <div>
+                                        <ion-input class="login_input" type="password" name="password" placeholder="Password"
+                                                   required></ion-input>
+                                    </div>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                        <ion-grid class="green_btn">
+                            <ion-button [routerLink]="['/tabs/tab1']" expand="block" shape="round" color="success">Login
+                            </ion-button>
+                        </ion-grid>
+                    </form>
+                </div>
+                <hr class="hr_line">
+                <div>
+                    <h6 class="fgt_pwd" (click)="forgetpwdlink()" routerDirection="forward" >Forget Password..?</h6>
+                </div>
+
+
+                <ion-grid class="blue_btn">
+                    <ion-row>
+                        <ion-col size="12">
+                            <ion-button [routerLink]="['/signup']" expand="block" color="secondary">New Registration
+                            </ion-button>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+
+                <ion-grid class="social_icon">
+                    <ion-row>
+                        <ion-col>
+                            <div>
+                                <img width="40px;" src="/assets/icon/facebook.svg">
+                            </div>
+                        </ion-col>
+                        <ion-col ></ion-col>
+                        <ion-col>
+                            <div>
+                                <img width="40px;" src="/assets/icon/insta.svg">
+                            </div>
+                        </ion-col>
+                        <ion-col></ion-col>
+                        <ion-col>
+                            <div>
+                                <img width="40px;" src="/assets/icon/twitter.svg">
+                            </div>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+
+            </div>
+        </div>
+    </ion-content>
+</ion-app>
