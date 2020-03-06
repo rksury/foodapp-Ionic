@@ -37,6 +37,25 @@ const routes: Routes = [
                     }
                 ]
             },
+
+            {
+                path:
+                    'profile',
+                loadChildren: () =>
+                    import('../profile/profile.module').then(m => m.ProfilePageModule)
+            },
+
+            {
+                path: 'cart',
+                loadChildren: () =>
+                    import('../cart/cart.module').then(m => m.CartPageModule)
+            },
+
+            {
+                path: 'restaurent',
+                loadChildren: () =>
+                    import('../restaurent/restaurent.module').then(m => m.RestaurentPageModule)
+            },
             {
                 path: '', redirectTo: '/tabs/tab1', pathMatch: 'full'
             }
@@ -44,7 +63,8 @@ const routes: Routes = [
     },
     {
         path: '', redirectTo: '/tabs/tab1', pathMatch: 'full'
-    }
+    },
+
 ];
 
 

@@ -1,0 +1,44 @@
+//@import '~animate.css/animate.min.css';
+//
+//.cart-modal {
+//  --height: 50%;
+//  --border-radius: 10px;
+//  padding: 25px;
+//}
+
+//.image_grid{
+//  justify-content: center;
+//  align-items: center;
+//}
+
+.heading {
+  text-align: center;
+  color: #b8b8b8;
+  font-size: 15vw;
+  margin-top: 15%;
+}
+.cart_image {
+  padding: 0;
+  border: none;
+  align-items: center;
+  width: 80px;
+  height: 60px;
+}
+
+.hr_line{
+  width: 70%;
+  background-color: #b8b8b8;
+}
+
+.cart_text{
+ border: 1px solid red;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.green_btn {
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}

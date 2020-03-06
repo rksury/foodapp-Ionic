@@ -1,0 +1,81 @@
+<ion-header>
+    <ion-title>profile</ion-title>
+</ion-header>
+
+<ion-content>
+    <div class="heading_bar">
+        <div class="circle_bar">
+            <img class="img_circle" src="/assets/profile.png">
+        </div>
+    </div>
+    <div style="margin-top: 10%;">
+         <h1 class="heading_text"> User Profile </h1>
+    </div>
+
+    <div>
+        <form [formGroup]="submitform" (ngSubmit)="OnSubmit()">
+            <ion-grid class="main_grid">
+                <ion-row>
+                    <ion-col>
+                        <ion-list inset>
+                            <ion-item>
+                                <div class="form-field">
+                                    <ion-input class="center_input" type="text" formControlName="fullname"
+                                               placeholder="Full Name" required></ion-input>
+                                </div>
+                            </ion-item>
+
+                            <ion-item>
+                                <div class="form-field">
+                                    <ion-input class="center_input" type="email" formControlName="email"
+                                               placeholder="E-mail" required></ion-input>
+                                </div>
+                            </ion-item>
+
+                            <ion-item class="select_option">
+                                <div class="form-field">
+                                    <ion-datetime class="center_input" type="date" formControlName="dob"
+                                                  placeholder="D.O.B."></ion-datetime>
+                                </div>
+                            </ion-item>
+
+                            <ion-item>
+                                <div class="form-field">
+                                    <ion-input class="center_input" type="number" formControlName="mobile"
+                                               placeholder="Mobile Number"
+                                               required></ion-input>
+                                </div>
+                            </ion-item>
+
+                            <ion-item>
+                                <div class="form-field">
+                                    <ion-input class="center_input" type="password" formControlName="password"
+                                               placeholder="Password"
+                                               required></ion-input>
+                                </div>
+                            </ion-item>
+
+                            <ion-item>
+                                <div class="form-field">
+                                    <ion-input class="center_input" type="text" formControlName="address"
+                                               placeholder="Address" required></ion-input>
+                                </div>
+                            </ion-item>
+
+                        </ion-list>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+
+            <ion-col class="submit-btn">
+                <div class="form-field">
+                    <ion-button color="danger" fill="outline" shape="round" type="submit"
+                                [disabled]="!submitform.valid">Submit
+                    </ion-button>
+                </div>
+            </ion-col>
+
+        </form>
+    </div>
+
+</ion-content>

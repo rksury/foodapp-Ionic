@@ -1,5 +1,8 @@
 import {NgModule} from '@angular/core';
 import {PreloadAllModules, RouterModule, Routes} from '@angular/router';
+import {BrowserModule} from "@angular/platform-browser";
+import {IonicModule} from "@ionic/angular";
+// import {CartPageModule} from "./cart/cart.module";
 
 const routes: Routes = [
 
@@ -15,11 +18,14 @@ const routes: Routes = [
     {
         path: 'signup',
         loadChildren: () => import('./signup/signup.module').then(m => m.SignupPageModule)
-    }
+    },
+
+
 ];
 
 @NgModule({
     imports: [
+        BrowserModule, IonicModule,
         RouterModule.forRoot(routes, {preloadingStrategy: PreloadAllModules})
     ],
     exports: [RouterModule]

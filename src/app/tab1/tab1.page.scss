@@ -1,18 +1,44 @@
 
-#bg_color {
-  background-image: url("../../assets/sandwich.jpg");
-  width: auto;
-  height: auto;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  background-repeat: no-repeat;
-
+.img_circle{
+  border-radius: 50%;
+  border: 1px solid #b8b8b8;
+  width: 60px;
+  height:60px;
 }
 
+.hr_row{
+  background-color: #b8b8b8;
+  width: 70%;
+  border: 0px;
+  padding: 0px;
+}
 
-.img_size{
+.banner{
+  border-radius: 10%;
+  border: 1px solid #b8b8b8;
+  width: 150px;
+  height:80px;
+}
 
-  border-radius: 50%;
-  width:200px;
-  height: 200px;
+//.banner{
+// background-color: rgba(25, 25, 25, 0.5) !important;
+//  //margin-top: 20%;
+//  height: 100px;
+//  width: auto;
+//  background-size: cover;
+//  background-repeat: no-repeat;
+//}
+
+
+.square_image{
+  border-radius: 30%;
+  border: 1px solid #b8b8b8;
+  width: 80px;
+  height:60px;
+}
+
+.image_grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
