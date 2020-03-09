@@ -1,7 +1,15 @@
+.circle_box{
+//display: flex;
+//  border: 1px solid #999999;
+  border-radius: 30%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 
+}
 .img_circle{
   border-radius: 50%;
-  border: 1px solid #b8b8b8;
+  //border: 1px solid #b8b8b8;
   width: 60px;
   height:60px;
 }
@@ -32,7 +40,7 @@
 
 .square_image{
   border-radius: 30%;
-  border: 1px solid #b8b8b8;
+  //border: 1px solid #b8b8b8;
   width: 80px;
   height:60px;
 }
@@ -41,4 +49,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.all_data{
+  border: 1px solid #999999;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+
 }
