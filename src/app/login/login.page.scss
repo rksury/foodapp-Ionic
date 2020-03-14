@@ -1,4 +1,4 @@
-#bg_color {
+#bg_image {
   background-image: url("../../assets/bg.jpg");
   width: auto;
   height: 100vh;
@@ -23,7 +23,7 @@
   align-items: center;
 }
 
-.logo1 {
+.logo_align {
   margin-top: 20%;
 }
 
@@ -32,14 +32,7 @@
   align-items: center;
   margin-top: 40%;
   width: 300px;
-  color: #9b9b9b;
   text-align: center;
-}
-
-.login_icon {
-  width: 20px;
-  height: 20px;
-  color: #3dd77a;
 }
 
 .login_input {
@@ -48,11 +41,15 @@
   border-radius: 50px;
 
 }
+.submit-btn {
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
 
 .hr_line {
   width: 80%;
   margin-top: 10%;
-
   background-color: #a0a0a0;
 }
 
@@ -69,21 +66,12 @@
 
 }
 
-.green_btn {
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-}
 
-.blue_btn {
-  justify-content: center;
-  align-items: center;
-  width: 300px;
-}
 
-.social_icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+//.blue_btn {
+//  justify-content: center;
+//  align-items: center;
+//  width: 300px;
+//}
 
-}
+

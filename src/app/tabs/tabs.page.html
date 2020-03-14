@@ -4,10 +4,7 @@
         <ion-list>
 
             <ion-menu-toggle auto-hide="true">
-                <ion-item class="menu_link" (click)="profile()" routerDirection="forward">
-                    <!--                    <div class="circle_bar">-->
-                    <!--                        <img class="img_circle" src="/assets/profile.png">-->
-                    <!--                    </div>-->
+                <ion-item (click)="profile()" routerDirection="forward">
                     <ion-icon name="person-outline" slot="start"></ion-icon>
                     <div>
                         <ion-text style="font-size: 6vw; color:#eb445a;">Profile Name</ion-text>
@@ -38,7 +35,7 @@
                 </ion-item>
 
                 <ion-item class="menu_link">
-                    <ion-icon name="cog-outline" slot="start" color="primary"></ion-icon>
+                    <ion-icon name="cog-outline" slot="start"></ion-icon>
                     <ion-label>Settings</ion-label>
                     <ion-icon name="chevron-forward-outline"></ion-icon>
 
@@ -60,40 +57,11 @@
 
 <div class="ion-page" id="main-content" color="dark">
 
-    <!--    <ion-header>-->
-    <!--        <ion-toolbar color="dark">-->
-    <!--            <ion-buttons slot="start">-->
-    <!--                <ion-menu-button color="success"></ion-menu-button>-->
-    <!--            </ion-buttons>-->
-
-    <!--            <ion-tabs>-->
-    <!--                <ion-tab-bar>-->
-    <!--                    <ion-tab-button></ion-tab-button>-->
-    <!--                    <ion-tab-button></ion-tab-button>-->
-    <!--                    <ion-tab-button></ion-tab-button>-->
-    <!--                    <ion-tab-button></ion-tab-button>-->
-
-    <!--                    <ion-tab-button tab="tab2">-->
-    <!--                        <ion-icon name="color-filter" color="success"></ion-icon>-->
-    <!--                    </ion-tab-button>-->
-
-
-    <!--                    <ion-tab-button tab="tab3">-->
-    <!--                        <ion-icon name="cart" color="success"></ion-icon>-->
-    <!--                    </ion-tab-button>-->
-
-    <!--                </ion-tab-bar>-->
-    <!--            </ion-tabs>-->
-
-    <!--        </ion-toolbar>-->
-    <!--    </ion-header>-->
-
     <ion-header>
         <ion-toolbar color="success">
 
             <ion-buttons slot="start">
                 <ion-menu-button color="light"></ion-menu-button>
-                <ion-button></ion-button>
                 <ion-button></ion-button>
                 <ion-button></ion-button>
                 <ion-button></ion-button>
@@ -120,57 +88,20 @@
 
         <ion-tab-bar slot="bottom" color="success">
             <ion-tab-button></ion-tab-button>
-            <ion-tab-button class="bottom_text" tab="tab1">
+            <ion-tab-button class="bottom_icon" tab="tab1">
                 <ion-icon name="home"></ion-icon>
                 <ion-label>Home</ion-label>
             </ion-tab-button>
 
             <ion-tab-button></ion-tab-button>
 
-            <ion-tab-button class="bottom_text" (click)="restaurant()" routerDirection="forward">
+            <ion-tab-button class="bottom_icon" (click)="restaurant()" routerDirection="forward">
                 <ion-icon name="keypad"></ion-icon>
                 <ion-label>Restaurants</ion-label>
 
-                <!--                <ion-col color="success">-->
-                <!--                    <ion-icon class="bottom_icon" name="keypad" (click)="restaurant()"-->
-                <!--                              routerDirection="forward"></ion-icon>-->
-                <!--                    <ion-select [interfaceOptions]="restaurants">-->
-                <!--                        <ion-select-option value="Restaurant-1" (click)="restaurant()" routerDirection="forward">-->
-                <!--                            Restaurant-1-->
-                <!--                        </ion-select-option>-->
-                <!--                        <ion-select-option value="Restaurant-2" (click)="restaurant()" routerDirection="forward">-->
-                <!--                            Restaurant-2-->
-                <!--                        </ion-select-option>-->
-                <!--                        <ion-select-option value="Restaurant-3" (click)="restaurant()" routerDirection="forward">-->
-                <!--                            Restaurant-3-->
-                <!--                        </ion-select-option>-->
-                <!--                        <ion-select-option value="Restaurant-4" (click)="restaurant()" routerDirection="forward">-->
-                <!--                            Restaurant-4-->
-                <!--                        </ion-select-option>-->
-                <!--                        <ion-select-option value="Restaurant-5" (click)="restaurant()" routerDirection="forward">-->
-                <!--                            Restaurant-5-->
-                <!--                        </ion-select-option>-->
-                <!--                        <ion-select-option value="Restaurant-6" (click)="restaurant()" routerDirection="forward">-->
-                <!--                            Restaurant-6-->
-                <!--                        </ion-select-option>-->
-                <!--                        <ion-select-option value="Restaurant-7" (click)="restaurant()" routerDirection="forward">-->
-                <!--                            Restaurant-7-->
-                <!--                        </ion-select-option>-->
-                <!--                        <ion-select-option value="Restaurant-8" (click)="restaurant()" routerDirection="forward">-->
-                <!--                            Restaurant-8-->
-                <!--                        </ion-select-option>-->
-                <!--                        <ion-select-option value="Restaurant-9" (click)="restaurant()" routerDirection="forward">-->
-                <!--                            Restaurant-9-->
-                <!--                        </ion-select-option>-->
-                <!--                        <ion-select-option value="Restaurant-10" (click)="restaurant()" routerDirection="forward">-->
-                <!--                            Restaurant-10-->
-                <!--                        </ion-select-option>-->
-                <!--                    </ion-select>-->
-                <!--                </ion-col>-->
-
             </ion-tab-button>
-            <ion-tab-button></ion-tab-button>
 
+            <ion-tab-button></ion-tab-button>
 
         </ion-tab-bar>
 
