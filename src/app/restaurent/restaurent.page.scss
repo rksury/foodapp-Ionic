@@ -20,6 +20,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10%;
+  //align-items: center;
+  //text-align: center;
 }
 
 .shape_overlay {
@@ -28,11 +30,16 @@
   width: 15vw;
   background-size: cover;
   background-repeat: no-repeat;
+  justify-content: center;
 
 }
 
 .image_text {
   color: white;
+  text-align: center;
+}
+
+.button_overlay{
   text-align: center;
 }
 
