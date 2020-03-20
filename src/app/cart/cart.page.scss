@@ -1,15 +1,4 @@
-//@import '~animate.css/animate.min.css';
-//
-//.cart-modal {
-//  --height: 50%;
-//  --border-radius: 10px;
-//  padding: 25px;
-//}
-
-//.image_grid{
-//  justify-content: center;
-//  align-items: center;
-//}
+@import '~animate.css/animate.min.css';
 
 .heading {
   text-align: center;
@@ -18,11 +7,33 @@
   margin-top: 15%;
 }
 .cart_image {
+  content:url("../../assets/cart.png");
   padding: 0;
   border: none;
   align-items: center;
   width: 80px;
   height: 60px;
+}
+
+.title_color{
+  color: #999999;
+  font-size: 5vw;
+}
+
+.price_color{
+  color: #2dd36f;
+  font-size: 5vw;
+}
+
+.detail_color{
+  color: #383a3e;
+  font-size: 3vw;
+}
+
+.increment_decrement{
+  width: 70px;
+  text-align: center;
+  color: #cf3c4f;
 }
 
 .hr_line{
@@ -31,7 +42,6 @@
 }
 
 .cart_text{
- border: 1px solid red;
   margin: 0px;
   padding: 0px;
 }
