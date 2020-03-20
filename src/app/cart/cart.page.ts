@@ -7,13 +7,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartPage implements OnInit {
 
-  constructor() { }
+  constructor() {
+    // {
+  //   this.shop = this.shop.map(food => {
+  //     food['qty'] = 0;
+  //     return food;
+  //   });
+  // }
+  //
+  // incrementQty(index: number) {
+  //   this.shop[index].qty += 1;
+  // }
+  //
+  // decrementQty(index: number) {
+  //   this.shop[index].qty -= 1;
+  // }
+  }
 
   ngOnInit() {
   }
 
- // OnSubmit() {
- //        console.warn(this.submitform.value);
- //    }
+
 
 }
