@@ -6,35 +6,43 @@
 }
 
 .circle_box{
-//display: flex;
-//  border: 1px solid #999999;
-  border-radius: 30%;
   text-align: center;
-  justify-content: center;
-  align-items: center;
+
 
 }
 .img_circle{
+ content:url("../../assets/food2.jpeg");
   border-radius: 50%;
-  //border: 1px solid #b8b8b8;
   width: 60px;
   height:60px;
+  box-shadow: 5px 5px 5px  #999999;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+.title_color{
+  color: #383a3e;
+  font-size: 4vw;
 }
 
-.hr_row{
-  background-color: #b8b8b8;
-  width: 70%;
-  border: 0px;
-  padding: 0px;
+.price_color{
+  color: #2dd36f;
+  font-size: 4vw;
 }
 
+.detail_color{
+  color: #999999;
+  font-size: 3vw;
+}
+                                              //end top rated food
+
+                                      //start Restaurant
 .banner{
   border-radius: 10%;
   border: 1px solid #b8b8b8;
   width: 150px;
   height:80px;
 }
-.bg_color {
+.restaurants_image {
   background-image: url("../../assets/sandwich.jpg");
   width: 100%;
   height: 30vh;
@@ -51,14 +59,11 @@
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10%;
-  //align-items: center;
-  //text-align: center;
 }
 
 .shape_overlay {
   background-color: rgba(100  , 100, 100, 0.5) !important;
   height: 6vh;
-  //width: 1vw;
   background-size: cover;
   background-repeat: no-repeat;
   justify-content: center;
@@ -76,22 +81,16 @@
   text-align: center;
 }
 
+                                            // Restaurant end
 
 
-.square_image{
-  border-radius: 30%;
-  //border: 1px solid #b8b8b8;
-  width: 80px;
-  height:60px;
-
-}
-
-
+                    // start Food
 
 .image_grid{
   display: flex;
   justify-content: center;
   align-items: center;
+  //border: 1px solid red;
 }
 
 .all_data{
@@ -99,8 +98,20 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 5px #888888;
+  padding-top: 10px;
+  box-shadow: 5px 5px #999999;
+  // margin-right: auto !important;
+  //margin-left: auto !important;
 
 }
+
+.square_image{
+  border-radius: 30%;
+  //border: 1px solid #b8b8b8;
+  width: 80px;
+  height:60px;
+   margin-right: auto !important;
+  margin-left: auto !important;
+
+}
+                // End Food
