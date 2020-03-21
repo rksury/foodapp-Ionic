@@ -56,6 +56,11 @@ const routes: Routes = [
                 loadChildren: () =>
                     import('../restaurent/restaurent.module').then(m => m.RestaurentPageModule)
             },
+
+            {
+                path: 'myorders',
+                loadChildren: () => import('../myorders/myorders.module').then( m => m.MyordersPageModule)
+            },
             {
                 path: '', redirectTo: '/tabs/tab1', pathMatch: 'full'
             }
