@@ -14,18 +14,36 @@
                         <ion-grid class="main_grid">
                             <ion-row>
                                 <ion-col>
+
                                     <div class="form-field">
-                                        <ion-input class="login_input" type="text" formControlName="Number"
-                                                   placeholder="Mobile Number" required></ion-input>
+                                        <div>
+                                            <ion-input class="login_input" type="text" formControlName="mobile_number"
+                                                       placeholder="Mobile Number" required></ion-input>
+                                        </div>
+                                        <div *ngFor="let error of errorMessage.mobile_number">
+                                            <ng-container
+                                                    *ngIf="mobile_number.hasError(error.type) && (mobile_number.dirty || mobile_number.touched)">
+                                                <small class="error-message">{{error.message}}</small>
+                                            </ng-container>
+                                        </div>
                                     </div>
+
                                 </ion-col>
                             </ion-row>
 
                             <ion-row>
                                 <ion-col>
                                     <div class="form-field">
-                                        <ion-input class="login_input" type="password" formControlName="password"
-                                                   placeholder="Password" required></ion-input>
+                                        <div>
+                                            <ion-input class="login_input" type="password" formControlName="password"
+                                                       placeholder="Password" required></ion-input>
+                                        </div>
+                                        <div *ngFor="let error of errorMessage.password">
+                                            <ng-container
+                                                    *ngIf="password.hasError(error.type) && (password.dirty || password.touched)">
+                                                <small class="error-message">{{error.message}}</small>
+                                            </ng-container>
+                                        </div>
                                     </div>
                                 </ion-col>
                             </ion-row>
@@ -34,8 +52,9 @@
                             <ion-row>
                                 <ion-col>
                                     <div class="form-field">
-                                        <ion-button type="submit" [routerLink]="['/tabs/tab1']" expand="block" shape="round" color="success"
-                                                    [disabled]="!submitform.valid" >Login
+                                        <ion-button type="submit" [routerLink]="['/tabs/tab1']" expand="block"
+                                                    shape="round" color="success"
+                                                    [disabled]="!submitform.valid">Login
                                         </ion-button>
                                     </div>
                                 </ion-col>
@@ -57,7 +76,6 @@
                 <!--                        </ion-col>-->
                 <!--                    </ion-row>-->
                 <!--                </ion-grid>-->
-
 
 
             </div>

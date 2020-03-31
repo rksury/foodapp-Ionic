@@ -32,5 +32,8 @@ export class TabsPage {
   myorders() {
     this.router.navigate(['/tabs/myorders']);
   }
+  favorite() {
+    this.router.navigate(['/tabs/favorite']);
+  }
 
 }

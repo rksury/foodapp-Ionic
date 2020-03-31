@@ -1,5 +1,8 @@
 @import url("http://127.0.0.1:4000/static/login/login.css");
-//
+.error-message{
+  color: red;
+}
+
 #bg_image {
   background-image: url("../../assets/bg.jpg");
   width: auto;
@@ -70,10 +73,5 @@
 
 
 
-////.blue_btn {
-////  justify-content: center;
-////  align-items: center;
-////  width: 300px;
-////}
-//
+
 

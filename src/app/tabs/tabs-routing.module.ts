@@ -66,6 +66,10 @@ const routes: Routes = [
                 loadChildren: () => import('../restdetail/restdetail.module').then(m => m.RestdetailPageModule)
             },
             {
+                path: 'favorite',
+                loadChildren: () => import('../favorite/favorite.module').then(m => m.FavoritePageModule)
+            },
+            {
                 path: '', redirectTo: '/tabs/tab1', pathMatch: 'full'
             }
         ]

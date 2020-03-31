@@ -13,8 +13,8 @@
                     </div>
                 </ion-item>
 
-                <ion-item class="menu_link">
-                    <ion-icon name="heart-outline" slot="start"></ion-icon>
+                <ion-item class="menu_link" (click)="favorite()" routerDirection="forward">
+                    <ion-icon name="heart-outline" slot="start" ></ion-icon>
                     <ion-label>Favorite</ion-label>
                     <ion-icon name="chevron-forward-outline"></ion-icon>
                 </ion-item>
