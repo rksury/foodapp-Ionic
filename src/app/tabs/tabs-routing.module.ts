@@ -59,7 +59,11 @@ const routes: Routes = [
 
             {
                 path: 'myorders',
-                loadChildren: () => import('../myorders/myorders.module').then( m => m.MyordersPageModule)
+                loadChildren: () => import('../myorders/myorders.module').then(m => m.MyordersPageModule)
+            },
+            {
+                path: 'restdetail',
+                loadChildren: () => import('../restdetail/restdetail.module').then(m => m.RestdetailPageModule)
             },
             {
                 path: '', redirectTo: '/tabs/tab1', pathMatch: 'full'

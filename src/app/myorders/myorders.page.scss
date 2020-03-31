@@ -27,16 +27,17 @@
 .restaurant_color{
   color: #383a3e;
 }
-.rating{
-  background-color: #2dd36f;
+.rating {
+  background-color: #2fdf75;
   color: white;
-  font-size:   15px;
+  font-size: 15px;
   width: 40px;
   height: 20px;
   z-index: 11;
   position: absolute;
-  right: 10px;
-  padding-left:5px;
+  right: 8px;
+  padding-left: 5px;
   padding-right: 5px;
-
+  text-align: center;
+  //border-radius: 5px;
 }

@@ -1,0 +1,121 @@
+//start Restaurant
+
+.restaurants_image {
+  background-image: url("../../assets/bg.jpg");
+  width: 100%;
+  height: 30vh;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.page_overlay{
+  background-color: white;
+  //border: 1px solid blue;
+  border-radius: 20px;
+  margin-top: -40px;
+  z-index: 999;
+   position: absolute;
+  width: 90%;
+  //box-shadow: 10px  10px 10px #9b9b9b;
+ //box-shadow:  0 -30px 20px -20px rgba(0,0,0,0.8);
+
+}
+
+.restaurant_name{
+  font-size: 20px;
+  color: #e04055;
+  margin-left: 5px;
+  margin-top: -1px
+
+}
+
+.rating {
+  background-color: #2fdf75;
+  color: white;
+  font-size: 15px;
+  width: 50px;
+  height: 20px;
+  z-index: 111;
+  position: absolute;
+  //right: 30px;
+  margin-left: 20px;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-align: center;
+}
+.menu_button {
+  background-color: #0070C9;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  height: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+
+.restaurant_type{
+  margin-top: -1px;
+  font-size: 15px;
+  color: #3a7be0;
+}
+.restaurant_detail {
+font-size: 12px;
+  color: #86888f;
+}
+
+.address{
+  margin-top: -20px;
+  color: #4d4d4d;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.restaurant_address{
+  font-size: 13px;
+  color:#86888f;
+
+}
+.contact{
+  font-size: 13px;
+  color:#4d4d4d;
+  margin-left: 5px;
+}
+.number{
+   font-size: 13px;
+  color:#ff4961;
+
+}
+.icon_size{
+  color: #86888f;
+  font-size: 30px;
+}
+.icon_size:hover{
+  color: #e04055;
+  font-size: 30px;
+}
+
+.time{
+  color: #2a2a2a;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.hr_row{
+  margin-top: -5px;
+  height: 1px;
+  background-color: antiquewhite;
+  width: 100%;
+
+}
+
+.need{
+  color: #86888f;
+  font-size: 14px;
+}
+// Restaurant end

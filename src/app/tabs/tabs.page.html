@@ -63,10 +63,10 @@
 <div class="ion-page" id="main-content" color="dark">
 
     <ion-header>
-        <ion-toolbar color="success">
+        <ion-toolbar class="nav_bar">
 
             <ion-buttons slot="start">
-                <ion-menu-button color="light"></ion-menu-button>
+                <ion-menu-button class="icon_color" ></ion-menu-button>
                 <ion-button></ion-button>
                 <ion-button></ion-button>
                 <ion-button></ion-button>
@@ -77,12 +77,13 @@
                 <ion-button></ion-button>
                 <ion-button></ion-button>
                 <ion-button></ion-button>
-                <ion-button class="icon_color">
+                <ion-button class="bottom_icon">
                     <ion-icon name="funnel"></ion-icon>
+
                 </ion-button>
 
-                <ion-button class="icon_color" (click)="cart()" routerDirection="forward">
-                    <ion-icon name="cart"></ion-icon>
+                <ion-button  class="bottom_icon" (click)="cart()" routerDirection="forward">
+                    <ion-icon name="cart" ></ion-icon>
                 </ion-button>
             </ion-buttons>
 
@@ -91,18 +92,18 @@
     </ion-header>
     <ion-tabs>
 
-        <ion-tab-bar slot="bottom" color="success">
+        <ion-tab-bar slot="bottom" color="light">
             <ion-tab-button></ion-tab-button>
             <ion-tab-button class="bottom_icon" tab="tab1">
-                <ion-icon name="home"></ion-icon>
-                <ion-label>Home</ion-label>
+                <ion-icon name="home" ></ion-icon>
+                <ion-label >Home</ion-label>
             </ion-tab-button>
 
             <ion-tab-button></ion-tab-button>
 
-            <ion-tab-button class="bottom_icon" (click)="restaurant()" routerDirection="forward">
-                <ion-icon name="fast-food"></ion-icon>
-                <ion-label>Restaurants</ion-label>
+            <ion-tab-button class="bottom_icon"  (click)="restaurant()" routerDirection="forward">
+                <ion-icon name="fast-food"  ></ion-icon>
+                <ion-label >Restaurants</ion-label>
 
             </ion-tab-button>
 
