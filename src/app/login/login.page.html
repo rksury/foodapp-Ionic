@@ -17,7 +17,7 @@
 
                                     <div class="form-field">
                                         <div>
-                                            <ion-input class="login_input" type="text" formControlName="mobile_number"
+                                            <ion-input class="login_input" type="number" formControlName="mobile_number"
                                                        placeholder="Mobile Number" required></ion-input>
                                         </div>
                                         <div *ngFor="let error of errorMessage.mobile_number">
@@ -31,29 +31,28 @@
                                 </ion-col>
                             </ion-row>
 
-                            <ion-row>
-                                <ion-col>
-                                    <div class="form-field">
-                                        <div>
-                                            <ion-input class="login_input" type="password" formControlName="password"
-                                                       placeholder="Password" required></ion-input>
-                                        </div>
-                                        <div *ngFor="let error of errorMessage.password">
-                                            <ng-container
-                                                    *ngIf="password.hasError(error.type) && (password.dirty || password.touched)">
-                                                <small class="error-message">{{error.message}}</small>
-                                            </ng-container>
-                                        </div>
-                                    </div>
-                                </ion-col>
-                            </ion-row>
+<!--                            <ion-row>-->
+<!--                                <ion-col>-->
+<!--                                    <div class="form-field">-->
+<!--                                        <div>-->
+<!--                                            <ion-input class="login_input" type="password" formControlName="password"-->
+<!--                                                       placeholder="Password" required></ion-input>-->
+<!--                                        </div>-->
+<!--                                        <div *ngFor="let error of errorMessage.password">-->
+<!--                                            <ng-container-->
+<!--                                                    *ngIf="password.hasError(error.type) && (password.dirty || password.touched)">-->
+<!--                                                <small class="error-message">{{error.message}}</small>-->
+<!--                                            </ng-container>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </ion-col>-->
+<!--                            </ion-row>-->
                         </ion-grid>
                         <ion-grid class="submit-btn">
                             <ion-row>
                                 <ion-col>
                                     <div class="form-field">
-                                        <ion-button type="submit" [routerLink]="['/tabs/tab1']" expand="block"
-                                                    shape="round" color="success"
+                                        <ion-button type="submit" expand="block" shape="round" color="success"
                                                     [disabled]="!submitform.valid">Login
                                         </ion-button>
                                     </div>
@@ -62,21 +61,10 @@
                         </ion-grid>
                     </form>
                 </div>
-                <hr class="hr_line">
+<!--                <hr class="hr_line">-->
                 <div>
-                    <h6 class="fgt_pwd" (click)="forgetpwdlink()" routerDirection="forward">Forget Password..?</h6>
+<!--                    <h6 class="fgt_pwd" (click)="forgetpwdlink()" routerDirection="forward">Forget Password..?</h6>-->
                 </div>
-
-
-                <!--                <ion-grid class="blue_btn">-->
-                <!--                    <ion-row>-->
-                <!--                        <ion-col size="12">-->
-                <!--                            <ion-button [routerLink]="['/signup']" expand="block" color="secondary">New Registration-->
-                <!--                            </ion-button>-->
-                <!--                        </ion-col>-->
-                <!--                    </ion-row>-->
-                <!--                </ion-grid>-->
-
 
             </div>
         </div>

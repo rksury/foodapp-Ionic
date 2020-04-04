@@ -1,10 +1,10 @@
 @import url("http://127.0.0.1:4000/static/login/login.css");
 .error-message{
-  color: red;
+  color: white;
 }
 
 #bg_image {
-  background-image: url("../../assets/bg.jpg");
+  background-image: url("../../assets/fullmirch.jpg");
   width: auto;
   height: 100vh;
   padding-top: 0px;
@@ -29,20 +29,20 @@
 }
 
 .logo_align {
-  margin-top: 20%;
+  margin-top: 250px;
 }
 
 .main_grid {
   justify-content: center;
   align-items: center;
-  margin-top: 40%;
+  margin-top: 10%;
   width: 300px;
   text-align: center;
 }
 
 .login_input {
   border: 1px solid #a0a0a0;
-  color: white;
+  color: black;
   border-radius: 50px;
 
 }
